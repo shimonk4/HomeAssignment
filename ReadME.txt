@@ -1,7 +1,7 @@
 Welcome to my home assignment:
 
 Requirements:
-1. First run the command 'pip install -r requirements.txt' at your new env.
+1. First run the command 'pip install -r requirements.txt' at your new env ( or install the packages manually one by one).
 2. Create folder in the same directory when your code is called csv_files, and put the csv files in there.
 3. You have to download RoboMongo on your machine in order to set the database as needed (and connect in order to see the database updated).
 
