@@ -52,7 +52,7 @@ def user_stats(user_id):
 @app.route('/sessionId/<sess_id>', methods=['GET', 'POST'])
 def session_id(sess_id):
     if myApi.is_server_on:
-        if myApi.database.is_user_id_already_exists_in_requests(sess_id):
+        if myApi.database.is_session_id_already_exists_in_requests(sess_id):
             return jsonify({"Begin": myApi.get_timestamp_from_requests_by_session_id(sess_id),
                             "Finish": myApi.get_latest_timestamp_in_any_table_by_session_id(sess_id),
                             "Partner Name": myApi.get_partner_name_by_session_id(sess_id)})
